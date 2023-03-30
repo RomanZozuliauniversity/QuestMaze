@@ -1,0 +1,108 @@
+.banner {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.31) 0%, rgba(1, 1, 1) 100%), url(../img/background-banner.webp);
+    background-size: cover;
+    background-position: 65.31% 44.06%;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner__image {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: 51.608% 50%;
+    filter: saturate(140%);
+    min-height: 32px;
+    max-width: 1122px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.banner__subtitle {
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 30px;
+    text-align: center;
+    color: var(--text-main-color);
+    margin: 20px;
+}
+
+.banner__buttons {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner__left-button {
+    display: block;
+    box-sizing: border-box;
+    padding: 20px 68px 20px 68px;
+    margin: 10px;
+    color: var(--banner-text-color);
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14.3px;
+    line-height: 14.3px;
+    background-color: var(--banner-left-button-color);
+    box-shadow: rgba(255, 197, 53, 0.3) 0px 10px 23.8px 1.2px;
+    border-width: 2px;
+    border-radius: 27px;
+    border-style: solid;
+    border-color: var(--banner-left-button-color)
+}
+
+.banner__left-button:hover {
+    background-color: var(--banner-left-button-color-hover);
+    border-color: var(--banner-left-button-color-hover)
+}
+
+.banner__right-button {
+    display: block;
+    box-sizing: border-box;
+    padding: 20px 68px 20px 68px;
+    margin: 10px;
+    color: var(--banner-text-color);
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14.3px;
+    line-height: 14.3px;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: var(--banner-right-button-color);
+    border-width: 2px;
+    border-radius: 27px;
+    border-style: solid;
+}
+
+.banner__right-button:hover {
+    background-color: var(--banner-right-button-color-hover);
+}
+
+.banner__right-button:active {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: var(--banner-right-button-color-active);
+}
+
+@media (min-width: 992px) {
+    .banner {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+}
+
+@media (min-width: 517px) {
+    .banner__buttons {
+        flex-direction: row;
+    }
+}
