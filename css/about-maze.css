@@ -1,0 +1,102 @@
+.sof_3 {
+    background-color: black;
+    text-align: center;
+    padding: 100px;
+}
+
+.photo-grid_3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.number_grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.photo_4 {
+    height: 40%;
+    width: 40%;
+
+}
+
+
+.text {
+    color: white;
+    font: 17px Roboto, sans-serif;
+}
+
+.h_3 {
+    font: 44px Raleway, sans-serif;
+    color: white;
+    font-weight: 900;
+}
+
+.text_near_photo {
+    text-align: left;
+    height: 100%;
+    width: 50%;
+}
+
+
+.number {
+    font-weight: bolder;
+    color: #806eff;
+    font: 50px Raleway, sans-serif;
+    font-weight: 900;
+
+}
+
+.number_2 {
+    font-weight: bolder;
+    color: #806eff;
+    font: 42px Raleway, sans-serif;
+    font-weight: 900;
+}
+
+
+
+
+@media only screen and (max-width: 800px) {
+
+    .photo-grid_3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .photo_4 {
+        height: 100%;
+        width: 100%;
+    }
+
+    .text_near_photo {
+        text-align: left;
+        height: 100%;
+        width: 100%;
+    }
+
+    .number_grid {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: 100%;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .number {
+        flex-basis: calc(50% - 10px);
+        padding: 1px;
+    }
+
+    .text {
+        color: white;
+        font: 12px Roboto, sans-serif;
+    }
+}

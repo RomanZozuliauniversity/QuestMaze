@@ -35,7 +35,7 @@
         currentSlideIdx = currentSlideIdx + 1 >= slides.length ? 0 : currentSlideIdx + 1;
         renderSlides();
     }
-    //setInterval(nextSlide, 1000);
+    setInterval(nextSlide, 5000);
     renderSlides();
     const btnNext = document.querySelector('.slide_btn-next');
     btnNext.addEventListener('click', nextSlide);
