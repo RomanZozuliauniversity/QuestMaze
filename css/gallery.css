@@ -1,144 +1,52 @@
-.header__text {
-    margin: 50px;
-    text-align: center;
+.gallery-title {
     font-size: 50px;
-
-}
-
-.subtitle__text {
-    margin: 50px;
+    font-style: normal;
+    font-weight: 900;
+    letter-spacing: -0.798px;
     text-align: center;
-    font-size: 50px;
+    color: var(--text-main-color);
+    margin: 45px;
 }
-
-.reviews__container {
-    margin-bottom: 55px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-shrink: 3;
-    gap: 30px;
-    width: 100%;
-    max-width: 1200px;
+.gallery-slide-container{
+    max-width: 1170px;
     margin: 0 auto;
-    padding: 0 15px;
 }
-
-.gallery__container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-shrink: 3;
-    gap: 30px;
+.gallery-slide-img {
     width: 100%;
-    max-width: 1200px;
+    height: 100%;
+    object-fit: cover;
+    background: var(--block-color);
+}
+.gallery-slide-container {
+    max-width: 1170px;
     margin: 0 auto;
-    padding: 0 15px;
+}
+.carousel-gallery {
+    margin: 0 auto;
+    position: relative;
+}
+.slide-btn-prev {
+    position: absolute;
+    top: 450px;
+    left: -5px;
+    width: 50px;
 }
 
-.button__container {
-    display: flex;
-    justify-content: center;
+.slide_btn-next{
+    position: absolute;
+    top: 450px;
+    right: -5px;
+    width: 50px;
 }
 
-.button__instagram {
-    width: 250px;
-    height: 50px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    border-width: 2px;
-    border-radius: 25px;
-    background-color: var(--background-color);
-    border-color: var(--text-secondary-color);
-    border-style: solid;
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-}
-
-.button__instagram:hover {
-    opacity: 1;
-    background-color: var(--text-secondary-color);
-    transition: all 1s ease;
-}
-
-.button__instagram:not(:hover) {
-    transition: 1s;
-}
-
-.button__text {
-    font: inherit;
-    font-size: 13px;
-    display: flex;
-    align-self: center;
-    padding-left: 5px;
-    color: white;
-}
-
-.button__icon-container {
-    padding-top: 11px;
-}
-
-.instagram__icon {
-    width: 24px;
-    height: 24px;
-    display: flex;
-}
-
-.image__one {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-}
-
-.image__two {
-    width: 436px;
-    height: 250px;
-    object-fit: cover;
-}
-
-.image__three {
-    width: 343px;
-    height: 250px;
-    object-fit: cover;
-}
-
-.image__four {
-    width: 436px;
-    height: 250px;
-    object-fit: cover;
-}
-
-.image__five {
-    width: 343px;
-    height: 250px;
-    object-fit: cover;
-}
-
-.image__six {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-}
-
-.review__one {
-    width: 353px;
-    height: 345px;
-    object-fit: cover;
-}
-
-.review__two {
-    width: 353px;
-    height: 345px;
-    object-fit: cover;
-}
-
-.review__three {
-    width: 353px;
-    height: 345px;
-    object-fit: cover;
+@media screen and (max-width: 980px) {
+    .slide_btn-next {
+        top: 200px;
+    }
+    .slide-btn-prev {
+        top: 200px;
+    }
+    .carousel-gallery{
+        height: px;
+    }
 }
