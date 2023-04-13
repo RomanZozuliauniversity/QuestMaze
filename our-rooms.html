@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Rooms</title>
+    <link rel="shortcut icon" href="img/questmaze-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/our-rooms.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__line">
+            <div class="header__line-container max-width-container" id="line">
+                <a class="header__number" href="tel:+1-234-567-8900">+ 1-234-567-8900</a>
+                <div class="header__social-icons social-icons">
+                    <a class="social-icons__icon" href="https://www.twitter.com">
+                        <img src="img/twitter-logo.svg" alt="Twitter Logo">
+                    </a>
+                    <a class="social-icons__icon" href="https://www.facebook.com">
+                        <img src="img/facebook-logo.svg" alt="Facebook Logo">
+                    </a>
+                    <a class="social-icons__icon" href="https://www.instagram.com">
+                        <img src="img/instagram-logo.svg" alt="Instagram Logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header-container max-width-container">
+            <a class="header__logo-link" href="index.html">
+                <img class="header__logo" src="img/questmaze-logo.svg" alt="QuestMaze Logo">
+            </a>
+            <div class="hamb">
+                <div class="hamb__field" id="hamb">
+                    <span class="bar"></span> <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+            <nav class="header__menu menu" id="menu">
+                <a class="menu__item" href="our-rooms.html">Our Rooms</a>
+                <a class="menu__item" href="gallery.html">Gallery</a>
+                <span class="menu__button">
+                    <a class="menu__button-link" href="index.html#ready-to-escape">Book a Quest</a>
+                </span>
+            </nav>
+        </div>
+        <div class="popup" id="popup"></div>
+    </header>
+    <main>
+        <section class="our-rooms">
+            <div class="max-width-container">
+                <h1 class="our-rooms__title">Our Rooms</h1>
+                <div class="our-rooms__list">
+
+                </div>
+            </div>
+        </section>
+        <section class="coming-soon"> <!--Image in each box is background! Зображення в кожному контейнері є фоновим!-->
+                <div class="sof_1">
+                    <h1 class="h_1">Coming Soon Rooms</h1><br>
+                    <div class="photo-grid">
+                        <div class="big-photo">
+                            <img class="img"
+                                src="//res2.weblium.site/res/5d41316df9f4bb00233b94dc/5d4c33d9d3fb2300244cc0ab_optimized_1395.webp">
+                            <span class="caption">
+                                <pre class="pre_1"><span class="line"><b>|</b></span> Murder in Cyberpunk World</pre>
+                            </span>
+                        </div>
+                        <div class="small-photos">
+                            <div class="small-photo">
+                                <img class="img"
+                                    src="//res2.weblium.site/res/5d41316df9f4bb00233b94dc/5d4c33e2a23aaa002375b1ea_optimized_1395.webp">
+                                <span class="caption">
+                                    <pre class="pre_1"><span class="line"><b>|</b></span> Treasure Island</pre>
+                                </span>
+                            </div>
+                            <div class="small-photo">
+                                <img class="img"
+                                    src="//res2.weblium.site/res/5d41316df9f4bb00233b94dc/5d4c33eaee7bf50024fe6f9c_optimized_1377.webp">
+                                <span class="caption">
+                                    <pre class="pre_1"><span class="line"><b>|</b></span> Dead or Alive</pre>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <div class="registration max-width-container">
+            <div class="map__container">
+                <iframe class="quest__location"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1104.8428655840708!2d-73.91799664912942!3d40.64641104658227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25c95faf5da67%3A0x6c999d6dde9fe33e!2zMjk5IEUgODd0aCBTdCwgQnJvb2tseW4sIE5ZIDExMjM2LCDQodC_0L7Qu9GD0YfQtdC90ZYg0KjRgtCw0YLQuCDQkNC80LXRgNC40LrQuA!5e0!3m2!1suk!2sua!4v1673428453065!5m2!1suk!2sua"
+                    allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="registration__form-container">
+                <h2 class="registration__form__title">Book a Room</h2>
+                <p class="registration__form__text">
+                    Spend time with your friends or family by solving one of the quests! Choose a plot to your
+                    liking, from fairy tales to blood-chilling horrors. You will have only one hour to get out of
+                    the location - do you hear the clock ticking?
+                </p>
+                <form class="registration__form" action="https://formspree.io/f/myyayayg" method="POST">
+                    <input class="registration__form__fullname" name="fullname" type="text"
+                        placeholder="Enter your full name*" required>
+                    <input class="registration__form__phonenumber" name="phonenumber" pattern="[0-9]{7}" type="tel"
+                        placeholder="Enter your phone number*" required>
+                    <input class="registration__form__specifydetails" name="details" type="text"
+                        placeholder="Specify the details here">
+                    <select class="registration__form-quest-lits" name="quest">
+                        <option class="select-placeholder" value="none">Choose a quest!</option>
+                    </select>
+                    <button class="registration__form__submit" type="submit">Send a Request</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <a class="footer__logo-link" href="#">
+                <img class="footer__logo" src="img/questmaze-logo.svg" alt="QuestMaze Logo">
+            </a>
+            <p class="footer__subtitle">
+                We offer a huge variety of thrilling quests, some of them occupy entire floors and promise a complete
+                immersion in the plot.
+            </p>
+            <nav class="footer__menu menu">
+                <a class="menu__item" href="our-rooms.html">Our Rooms</a>
+                <a class="menu__item" href="gallery.html">Gallery</a>
+                <a class="menu__item" href="contacts.html">Contacts</a>
+            </nav>
+            <div class="footer__social-icons social-icons">
+                <a class="social-icons__icon" href="https://www.twitter.com">
+                    <img src="img/twitter-logo.svg" alt="Twitter Logo">
+                </a>
+                <a class="social-icons__icon" href="https://www.facebook.com">
+                    <img src="img/facebook-logo.svg" alt="Facebook Logo">
+                </a>
+                <a class="social-icons__icon" href="https://www.instagram.com">
+                    <img src="img/instagram-logo.svg" alt="Instagram Logo">
+                </a>
+            </div>
+        </div>
+        <div class="footer__text-container">
+            <p class="footer__text">©Created by</p>
+            <p class="footer__text">All rights Reserved</p>
+        </div>
+    </footer>
+    <script src="js/render-room-card.js"></script>
+    <script src="js/hamburger-menu.js"></script>
+</body>
+
+</html>
