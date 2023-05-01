@@ -40,13 +40,10 @@
 }
 
 @media screen and (max-width: 980px) {
-    .slide_btn-next {
-        top: 200px;
+
+    .carousel-gallery {
+        width: 100%;
+       
     }
-    .slide-btn-prev {
-        top: 200px;
-    }
-    .carousel-gallery{
-        height: px;
-    }
+
 }
